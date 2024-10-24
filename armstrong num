@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+int num=153,sum=0,rem,n;
+rem=num;
+while(rem!=0)
+{
+n=rem%10;
+sum+=n*n*n;
+rem/=10;
+}
+if(sum==num){
+printf("armstrong");
+}
+else{
+printf("not armsrtrong");
+}
+return 0;
+}
