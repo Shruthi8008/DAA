@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[100] = "Hello World";
+    int first = 0;
+    int last = strlen(str) - 1;
+
+    while (first < last) {
+        // Swap characters
+        char temp = str[first];
+        str[first] = str[last];
+        str[last] = temp;
+
+        // Move pointers towards the center
+        first++;
+        last--;
+    }
+
+    printf("%s", str);
+    return 0;
+}
